@@ -39,7 +39,7 @@ auth.onAuthStateChanged((user) => {
             if (user.photoURL) {
                 imageUrl = user.photoURL;
             } else {
-                imageUrl = './resourses/img/user-solid.png';
+                imageUrl = '/Notes/resourses/img/user-solid.png';
             }
 
             userAvatar.style.backgroundImage = `url('${imageUrl}')`;
