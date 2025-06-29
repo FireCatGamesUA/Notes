@@ -5,5 +5,5 @@ document.getElementById("img").style.opacity = "1";
 document.getElementById("svg").style.filter = "blur(0px)";
 document.getElementById("svg").style.opacity = "1";
 setTimeout(function() {
-  window.location.href = "/Notes/headWeb/home.html";
+  window.location.href = "/headWeb/home.html";
 }, 3000);
