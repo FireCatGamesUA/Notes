@@ -24,7 +24,6 @@ let lastId = 1;
 
 const loginLink = document.getElementById('login');
 const userAvatar = document.getElementById('avatarka');
-const logoutBtn = document.getElementById('logoutBtn');
 
 auth.onAuthStateChanged((user) => {
     if (user) {
@@ -58,17 +57,6 @@ auth.onAuthStateChanged((user) => {
         window.location.href = '/Notes/loginMenu/login.html';
     }
 });
-if (logoutBtn) {
-    logoutBtn.addEventListener('click', () => {
-        auth.signOut()
-            .then(() => {
-                console.log("The user has successfully logged out.");
-            })
-            .catch((error) => {
-                console.error("Exit error:", error);
-            });
-    });
-}
 function saveNote(id, noteData) {
     if (userNotesRef) {
         userNotesRef.child(id).set(noteData);
@@ -187,6 +175,9 @@ $(document).ready(function () {
         };
         saveNote(id, note);
         createNote(id, note.title, note.text, note.state);
+    });
+    $("#avatarka").click(function(){
+        window.location.href = "/Notes/settingsMenu/settings.html";
     });
     $("#notesB").click(function () {
         $(".default").css("display", "grid");
