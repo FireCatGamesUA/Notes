@@ -15,7 +15,7 @@ const auth = firebase.auth();
 auth.onAuthStateChanged((user) => {
     if (user) {
         console.log("The user is logged in on the authentication page:", user.uid);
-        window.location.href = '/headWeb/home.html';
+        window.location.href = '/Notes/headWeb/home.html';
     } else {
         console.log("The user is not logged in on the authentication page.");
     }
