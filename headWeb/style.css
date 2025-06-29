@@ -166,6 +166,9 @@ button:hover{
   width: 32px;
   border-radius: 100%;
 }
+#avatarka:hover{
+  cursor: pointer;
+}
 .note:hover{
   cursor: pointer;
 }
