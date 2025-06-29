@@ -6,39 +6,32 @@
     <title>Settings</title>
     <link rel="web icon" href="/resourses/img/LogoNotesColoredCircle.png">
     <link rel="stylesheet" href="/settingsMenu/settings.css">
+    <link rel="stylesheet" href="/alertifyjs/css/alertify.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" async></script>
+    <script src="https://kit.fontawesome.com/c97e68c202.js" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js" defer></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-database-compat.js" defer></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth-compat.js" defer></script>
+    <script src="/alertifyjs/alertify.js" defer></script>
+    <script src="/alertifyjs/alertify.min.js" defer></script>
     <script src="/settingsMenu/settings.js" defer></script>
 </head>
 <body>
-    <div class="container">
-        <p class="general">Site options</p>
-        <section class="lang">
-            <p class="local">Language</p>
-            <div class="chooseLang">
-                <img src="/resourses/icons/englishFlagDraw.png" alt="" width="18px" height="18px">
-                <p>English</p>
+    <div class="baner"></div>
+    <div class="form">
+        <div class="container">
+            <div id="exit" class="lisu">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <p>Exit account</p>
             </div>
-        </section>
-        <section class="look">
-            <p class="local">Look</p>
-            <div class="chooseLook">
-                <img src="/resourses/icons/grids.png" alt="" width="18px" height="18px">
-                <p>Grids</p>
+            <div id="delete" class="lisu">
+                <i class="fa-solid fa-trash"></i>
+                <p>Delete account</p>
             </div>
-        </section>
-        <p class="general">Account options</p>
-        <section class="email">
-            <p class="local">Email</p>
-            <div class="changeEmail">
-                <p>sardelka228@gmail.com</p>
-            </div>
-        </section>
-        <section class="pass">
-            <p class="local">Password</p>
-            <div class="changePass">
-                <p>*********</p>
-            </div>
-        </section>
+        </div>
+    </div>
+    <div id="leave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6" width="24px"><path fill-rule="evenodd" d="M5.47 5.47a.75.75 0 0 1 1.06 0L12 10.94l5.47-5.47a.75.75 0 1 1 1.06 1.06L13.06 12l5.47 5.47a.75.75 0 1 1-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 0 1-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" /></svg>
     </div>
 </body>
 </html>
