@@ -1,10 +1,10 @@
 @font-face {
   font-family: "pacifico";
-  src: url(/resourses/fonts/Pacifico-Regular.ttf);
+  src: url(/Notes/resourses/fonts/Pacifico-Regular.ttf);
 }
 @font-face {
   font-family: "roboto";
-  src: url(/resourses/fonts/RobotoMono-Regular.ttf);
+  src: url(/Notes/resourses/fonts/RobotoMono-Regular.ttf);
 }
 *{
     margin: 0;
@@ -26,7 +26,7 @@ body{
     user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
 }
 .baner{
-    background: url(/resourses/img/BackgroundNotesColored.png);
+    background: url(/Notes/resourses/img/BackgroundNotesColored.png);
     background-size: cover;
     background-position: center;
 }
