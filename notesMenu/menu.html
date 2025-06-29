@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note</title>
+    <link rel="web icon" href="/resourses/img/LogoNotesColoredCircle.png">
+    <link rel="stylesheet" href="/alertifyjs/css/alertify.css">
+    <link rel="stylesheet" href="/notesMenu/menu.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js" defer></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-database-compat.js" defer></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth-compat.js" defer></script>
+    <script src="/alertifyjs/alertify.js" defer></script>
+    <script src="/alertifyjs/alertify.min.js" defer></script>
+    <script src="/notesMenu/menu.js" defer></script>
+</head>
+<body>
+    <div class="info">
+        <p class="date">13.06.2025</p>
+        <p class="time">17:45</p>
+    </div>
+    <div class="noteActionContainer">
+        <div class="noteAction">
+            <input type="text" placeholder="Title" class="title">
+            <textarea name="" class="text" placeholder="Some text..."></textarea>
+        </div>
+    </div>
+    <div class="noteSettingsContainer">
+        <div class="noteSettings">
+            <section id="delete">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5" width="24px"><path fill-rule="evenodd"d="M8.75 1A2.75 2.75 0 0 0 6 3.75v.443c-.795.077-1.584.176-2.365.298a.75.75 0 1 0 .23 1.482l.149-.022.841 10.518A2.75 2.75 0 0 0 7.596 19h4.807a2.75 2.75 0 0 0 2.742-2.53l.841-10.52.149.023a.75.75 0 0 0 .23-1.482A41.03 41.03 0 0 0 14 4.193V3.75A2.75 2.75 0 0 0 11.25 1h-2.5ZM10 4c.84 0 1.673.025 2.5.075V3.75c0-.69-.56-1.25-1.25-1.25h-2.5c-.69 0-1.25.56-1.25 1.25v.325C8.327 4.025 9.16 4 10 4ZM8.58 7.72a.75.75 0 0 0-1.5.06l.3 7.5a.75.75 0 1 0 1.5-.06l-.3-7.5Zm4.34.06a.75.75 0 1 0-1.5-.06l-.3 7.5a.75.75 0 1 0 1.5.06l.3-7.5Z"clip-rule="evenodd" /></svg>
+            </section>
+            <section id="archive">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5" width="24px"><path d="M2 3a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H2Z" /><path fill-rule="evenodd"d="M2 7.5h16l-.811 7.71a2 2 0 0 1-1.99 1.79H4.802a2 2 0 0 1-1.99-1.79L2 7.5ZM7 11a1 1 0 0 1 1-1h4a1 1 0 1 1 0 2H8a1 1 0 0 1-1-1Z"clip-rule="evenodd" /></svg>
+            </section>
+            <section id="close">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6" width="24px"><path fill-rule="evenodd" d="M5.47 5.47a.75.75 0 0 1 1.06 0L12 10.94l5.47-5.47a.75.75 0 1 1 1.06 1.06L13.06 12l5.47 5.47a.75.75 0 1 1-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 0 1-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" /></svg>
+            </section>
+        </div>
+    </div>
+</body>
+</html>

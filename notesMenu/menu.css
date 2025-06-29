@@ -1,0 +1,140 @@
+@font-face {
+  font-family: "pacifico";
+  src: url(/resourses/fonts/Pacifico-Regular.ttf);
+}
+@font-face {
+  font-family: "roboto";
+  src: url(/resourses/fonts/RobotoMono-Regular.ttf);
+}
+::selection{
+    background-color: #ffed44;
+    color: white;
+}
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: roboto;
+}
+body{
+    display: grid;
+    grid-template-columns: 10fr 1fr;
+    height: 100vh;
+    width: 100%;
+    grid-template-rows: 1fr 5fr;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+}
+.info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    grid-column: 1/4;
+}
+.info p{
+    margin: 0px 100px;
+}
+.noteSettingsContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.noteSettings{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.noteSettings section{
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+}
+#delete{
+    background-color: #ff4444;
+    transition: all 0.9s;
+}
+#delete:hover{
+    background-color: #fb8080;
+}
+#archive{
+    background-color: #e7e8e8;
+    transition: all 0.9s;
+}
+#archive:hover{
+    background-color: #b2b2b2;
+}
+#close{
+    background-color: #e7e8e8;
+    transition: all 0.9s;
+}
+#close:hover{
+    background-color: #b2b2b2;
+}
+#archive.active{
+    background-color: #dff2f2;
+}
+#archive.active:hover{
+    background-color: #afbcbc;
+}
+.noteActionContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.noteAction{
+    width: 75%;
+    background: #ffed44;
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+    height: 90%;
+}
+input{
+  border: none;
+  outline: none;
+  background-color: #ffed44;
+  border-radius: 10px;
+}
+textarea{
+  resize: none;
+  scrollbar-color: white #ffed44;
+  overflow-x: hidden;
+  border: none;
+  outline: none;
+  background-color: #ffed44;
+  border-radius: 10px;
+}
+::placeholder{
+  color: black;
+}
+.title{
+  font-size: large;
+  font-weight: bold;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+}
+.text{
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}

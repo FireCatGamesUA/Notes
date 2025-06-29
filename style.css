@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+#img{
+  width: 250px;
+  position: absolute;
+  filter: grayscale(100) blur(10px);
+  transform: scale(5);
+  transition: 2s;
+  opacity: 0;
+}
+svg{
+  position: absolute;
+  transform: rotate(-90deg);
+  filter: blur(10px);
+  transition: 3s;
+  opacity: 0;
+}
+@keyframes fillCircle {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
