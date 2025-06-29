@@ -158,7 +158,7 @@ button:hover{
   display: none;
 }
 #avatarka{
-  background: url(./resourses/img/user-solid.png);
+  background: url(/Notes/resourses/img/user-solid.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
