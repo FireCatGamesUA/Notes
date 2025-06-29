@@ -1,10 +1,10 @@
 @font-face {
   font-family: "pacifico";
-  src: url(./resourses/fonts/Pacifico-Regular.ttf);
+  src: url(/Notes/resourses/fonts/Pacifico-Regular.ttf);
 }
 @font-face {
   font-family: "roboto";
-  src: url(./resourses/fonts/RobotoMono-Regular.ttf);
+  src: url(/Notes/resourses/fonts/RobotoMono-Regular.ttf);
 }
 *{
   margin: 0;
