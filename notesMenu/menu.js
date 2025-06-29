@@ -36,16 +36,16 @@ auth.onAuthStateChanged((user) => {
                 loadAndDisplayNote(openedNoteId);
             } else {
                 console.warn("No openedNoteId found in Firebase for this user.");
-                window.location.href = "/headWeb/home.html";
+                window.location.href = "/Notes/headWeb/home.html";
             }
         }).catch(error => {
             console.error("Error getting openedNoteId from Firebase:", error);
-            window.location.href = "/headWeb/home.html";
+            window.location.href = "/Notes/headWeb/home.html";
         });
 
     } else {
         console.log("User is not logged in. Redirect to the login page.");
-        window.location.href = '/loginMenu/login.html';
+        window.location.href = '/Notes/loginMenu/login.html';
     }
 });
 function loadAndDisplayNote(noteId) {
@@ -91,11 +91,11 @@ function loadAndDisplayNote(noteId) {
             if (userSettingsRef) {
                 userSettingsRef.child('openedNoteId').remove();
             }
-            window.location.href = "/headWeb/home.html";
+            window.location.href = "/Notes/headWeb/home.html";
         }
     }).catch(error => {
         console.error(`Error loading note ${noteId}:`, error);
-        window.location.href = "/headWeb/home.html";
+        window.location.href = "/Notes/headWeb/home.html";
     });
 }
 function updateNoteTimestamp(noteId) {
@@ -131,14 +131,14 @@ $(document).ready(function(){
                 .then(() => {
                     console.log("openedNoteId cleared from Firebase.");
                     localStorage.removeItem("openedNote");
-                    window.location.href = "/headWeb/home.html";
+                    window.location.href = "/Notes/headWeb/home.html";
                 })
                 .catch(error => {
                     console.error("Error clearing openedNoteId from Firebase:", error);
                 });
         } else {
             localStorage.removeItem("openedNote");
-            window.location.href = "/headWeb/home.html";
+            window.location.href = "/Notes/headWeb/home.html";
         }
     });
 
