@@ -39,7 +39,7 @@ auth.onAuthStateChanged((user) => {
             if (user.photoURL) {
                 imageUrl = user.photoURL;
             } else {
-                imageUrl = '/resourses/img/user-solid.png';
+                imageUrl = './resourses/img/user-solid.png';
             }
 
             userAvatar.style.backgroundImage = `url('${imageUrl}')`;
@@ -55,7 +55,7 @@ auth.onAuthStateChanged((user) => {
         if (loginLink) loginLink.style.display = 'block';
         if (userAvatar) userAvatar.style.display = 'none';
         $('.default, .archived, .deleted').empty();
-        window.location.href = '/loginMenu/login.html';
+        window.location.href = '/Notes/loginMenu/login.html';
     }
 });
 if (logoutBtn) {
@@ -161,7 +161,7 @@ function createNote(id, title = "Title", text = "Some text...", state = "default
             userSettingsRef.child('openedNoteId').set(id)
                 .then(() => {
                     console.log(`openedNoteId '${id}' saved in Firebase.`);
-                    window.location.href = "/notesMenu/menu.html";
+                    window.location.href = "/Notes/notesMenu/menu.html";
                 })
                 .catch(error => {
                     console.error("Error saving openedNoteId to Firebase:", error);
